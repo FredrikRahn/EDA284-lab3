@@ -10,7 +10,6 @@
 using namespace std;
 
 // bool __sync_bool_compare_and_swap (type *ptr, type oldval type newval)
-// perf stat -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses ./lock2 1 40000000
 // ============================================================================
 class eda283_lock{
 private:

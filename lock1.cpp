@@ -9,7 +9,8 @@
 
 using namespace std;
 
-
+// Compile: g++ -std=c++11 -pthread lock1.cpp -o lock1
+// perf: perf stat -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses ./lock1 1 40000000
 // ============================================================================
 // our lock implementation
 class eda283_lock{

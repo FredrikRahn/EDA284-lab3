@@ -112,3 +112,39 @@ Performance counter stats for './lock3 4 40000000':
        1,452737000 seconds sys
 
 --------------------------------------- LOCK 4 -------------------------------------
+
+ Performance counter stats for './lock4 1 40000000':
+
+     1 604 539 255      cycles:u
+     1 363 060 134      instructions:u            #    0,85  insn per cycle
+       440 725 552      L1-dcache-loads:u
+            35 304      L1-dcache-load-misses:u   #    0,01% of all L1-dcache hits
+
+       0,514385295 seconds time elapsed
+
+       0,514255000 seconds user
+       0,000000000 seconds sys
+
+Performance counter stats for './lock4 2 40000000':
+
+    20 308 440 096      cycles:u
+     1 996 090 267      instructions:u            #    0,10  insn per cycle
+       565 357 086      L1-dcache-loads:u
+       121 049 785      L1-dcache-load-misses:u   #   21,41% of all L1-dcache hits
+
+       3,775141770 seconds time elapsed
+
+       7,513211000 seconds user
+       0,000000000 seconds sys
+
+ Performance counter stats for './lock4 4 40000000':
+
+    33 840 015 882      cycles:u
+     2 404 236 607      instructions:u            #    0,07  insn per cycle
+       733 191 371      L1-dcache-loads:u
+        98 987 332      L1-dcache-load-misses:u   #   13,50% of all L1-dcache hits
+
+       3,366417067 seconds time elapsed
+
+      11,671111000 seconds user
+       0,013326000 seconds sys
